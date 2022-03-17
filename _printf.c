@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 
-	length = _print_fomart(format, args);
+	length = _print_format(format, args);
 	va_end(args);
 	return (length);
 }
