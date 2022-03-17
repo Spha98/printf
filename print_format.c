@@ -104,21 +104,5 @@ int _print_invalid_spec(char prev_format, char format, int count)
 }
 
 /**
-  * _validate_char - validate the type
-  * @_type: character to be comparate
-  *
-  * Return: 1 if char is equal to a type
-  */
-int _validate_char(char _type)
-{
-	char _types[] = {'c', 's', 'd', 'i', 'b', '%'};
-	int i = 0;
+  *    Edit Here **/
 
-	while (_types[i])
-	{
-		if (_types[i] == _type)
-			return (1);
-		i++;
-	}
-	return (0);
-}
