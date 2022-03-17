@@ -93,4 +93,3 @@ int main(void)
 	printf("Current length:     %d\n", b);
 	return (0);
 }
-
