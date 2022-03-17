@@ -53,3 +53,37 @@ Upon successful return, the
 .B _printf
 () function return the number of characters printed (excluding the null byte used to end output to strings).
 .LP
+If an output error is encountered, a negative value is returned.
+.SH SEE ALSO
+.I _write(3)
+.SH BUGS
+No known bugs.
+.SH EXAMPLES
+To print:
+.PP
+.RS 3
+.B #include "holberton.h"
+.PP
+_printf("Hello Holberton");
+.B // the output will be 'Hello Holberton'
+.PP
+_printf("%c", 'H');
+.B // the ouput will be 'H'
+.PP
+_printf("%s", "Hello Holberton");
+.B // the output will be 'Hello Holberton'
+.PP
+_printf("%!\\n");
+.B // the output will be '%!'
+.PP
+_printf("Complete the sentence: You %s nothing, Jon Snow.\\n", "know");
+.B // the output will be 'Complete the sentence: You know nothing, Jon Snow.'
+.PP
+_printf("%        s", "Hello");
+.B // the output will be 'Hello'
+.PP
+_printf("%        k");
+.B // the output will be '% k'
+.RE
+.SH AUTHOR
+Ernest Mqcina and Masindi Sekhwari/Sikhwari
