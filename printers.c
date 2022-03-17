@@ -76,5 +76,17 @@ int _print_a_integer(va_list args)
 }
 
 /**
-  * Edit here
+  * _recursion_integer - Prints a integer
+  * @a: integer to print
+  *
+  * Return: Nothing
   */
+void _recursion_integer(int a)
+{
+	unsigned int t;
+
+	t = a;
+	if (t / 10)
+		_recursion_integer(t / 10);
+	_write(t % 10 + '0');
+}
