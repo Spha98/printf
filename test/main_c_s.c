@@ -84,4 +84,13 @@ int main(void)
 	printf("Expected length:    %d\n", a);
 	printf("Current length:     %d\n", b);
 	printf("Expected output:    ");
+	a = printf("%");
+	printf("\n");
+	printf("Current output:     ");
+	b = _printf("%");
+	printf("\n");
+	printf("Expected length:    %d\n", a);
+	printf("Current length:     %d\n", b);
+	return (0);
+}
 
